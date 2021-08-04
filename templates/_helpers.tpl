@@ -42,14 +42,13 @@ app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end }}
 
-
-
 {{/*
-Create the secret value
+test
 */}}
 {{- define "generate-access-key-id" -}}
-{{- printf "%s-%s" .Values.salt .Values.access-key-id | md5sum |quote }}
+{{- printf "%s-%s" .Values.salt .Values.accessKeyId |  sha256sum | quote -}}
 {{- end }}
+
 {{- define "generate-secret-access-key" -}}
-{{- printf "%s-%s" .Values.salt .Values.secret-access-key | md5sum |quote }}
+{{- printf "%s-%s" .Values.salt .Values.secretAccessKey |  sha256sum | quote -}}
 {{- end }}

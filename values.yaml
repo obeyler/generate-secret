@@ -1,6 +1,7 @@
-secretname:
+fullnameOverride: velero
+#nameOverride:
 salt: xxx
-access-key-id: xxx
-secret-access-key: xxx
+accessKeyId: x45
+secretAccessKey: xxx
 
 
