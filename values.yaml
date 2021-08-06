@@ -20,5 +20,5 @@ minio:
     secretAccessKey: xadminsecretxx # must be changed
 
 generateBucketAndUser: true
-generateConfig: true
+generateCredential: true
 
