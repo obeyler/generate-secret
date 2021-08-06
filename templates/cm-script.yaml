@@ -16,6 +16,6 @@ data:
     #Create policy (or assert if they already exists)
     mc admin policy add minio readwrite-{{ .Values.user.accessKeyId }}  policy.json --insecure --ignore-existing
     #affect policy
-    mc admin policy set minio readwrite-{{ .Values.user.accessKeyId }} user={{ .Values.user.accessKeyId }}
+    mc admin policy set minio readwrite-{{ .Values.user.accessKeyId }} user={{ .Values.user.accessKeyId }} --insecure
     echo "end script"
 {{- end }}
