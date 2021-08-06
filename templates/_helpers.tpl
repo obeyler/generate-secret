@@ -5,6 +5,11 @@ Expand the name of the chart.
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
+{{- define "config.name" -}}
+{{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
+{{- end }}
+
+
 {{/*
 Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
@@ -42,13 +47,14 @@ app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end }}
 
-{{/*
-test
-*/}}
-{{- define "generate-access-key-id" -}}
-{{- printf "%s-%s" .Values.salt .Values.accessKeyId |  sha256sum | quote -}}
+{{- define "generate-secret-access-key" -}}
+{{- printf "%s-%s" .Values.salt .Values.user.accessKeyId |  sha256sum | quote -}}
 {{- end }}
 
-{{- define "generate-secret-access-key" -}}
-{{- printf "%s-%s" .Values.salt .Values.secretAccessKey |  sha256sum | quote -}}
+{{- define "generate-script-cm-name" -}}
+{{- printf "%s-script" .Values.user.accessKeyId | quote -}}
+{{- end }}
+
+{{- define "generate-policy-cm-name" -}}
+{{- printf "%s-policy" .Values.user.accessKeyId | quote -}}
 {{- end }}

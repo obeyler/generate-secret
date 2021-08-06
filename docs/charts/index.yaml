@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   generate-secret:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-08-04T17:21:49.548098354+02:00"
+    appVersion: 1.0.0
+    created: "2021-08-06T09:42:17.285995709+02:00"
     description: A Helm chart for Kubernetes
-    digest: a04e5099268e96d80239f53daba5a8c86ac8bd27d5ee9a64484b867266ae944d
+    digest: ceb5cedb7a016dccd83693f6369d718f71e87b2d5c4b6d02013beab2e5f056a4
     name: generate-secret
     type: application
     urls:
     - generate-secret-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-04T17:21:49.547754462+02:00"
+generated: "2021-08-06T09:42:17.285537052+02:00"

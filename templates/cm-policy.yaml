@@ -1,0 +1,23 @@
+{{- if and (.Values.generateBucketAndUser) }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "generate-policy-cm-name" . }}
+data:
+  policy.json: |-
+    {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Action": [
+              "s3:*"
+          ],
+          "Effect": "Allow",
+          "Resource": [
+              "arn:aws:s3:::{{.Values.accessKeyId }}/*"
+          ],
+          "Sid": ""
+        }
+      ]
+    }
+  {{- end }}

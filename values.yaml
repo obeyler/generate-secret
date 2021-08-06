@@ -1,7 +1,24 @@
 fullnameOverride: velero
 #nameOverride:
-salt: xxx
-accessKeyId: x45
-secretAccessKey: xxx
 
+image:
+  name: minio/mc
+  tag: RELEASE.2021-03-12T03-36-59Z
+  pullPolicy: Always
+  repository: docker.io
+  #pullSecret:
+
+salt: xxx
+
+user:
+  accessKeyId: cluster-1 # must be changed
+## admin param is only mandatory for user and bucket creation
+minio:
+  url:
+  admin:
+    accessKeyId: xadminxx # must be changed
+    secretAccessKey: xadminsecretxx # must be changed
+
+generateBucketAndUser: true
+generateConfig: true
 
