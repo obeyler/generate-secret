@@ -3,7 +3,6 @@ kind: Job
 metadata:
   name: {{.Values.user.accessKeyId }}-create-bucket
 spec:
-  ttlSecondsAfterFinished: 60
   template:
     spec:
       volumes:
