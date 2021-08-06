@@ -3,12 +3,22 @@ entries:
   generate-secret:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-06T09:42:17.285995709+02:00"
+    created: "2021-08-06T10:25:27.082062601+02:00"
     description: A Helm chart for Kubernetes
-    digest: ceb5cedb7a016dccd83693f6369d718f71e87b2d5c4b6d02013beab2e5f056a4
+    digest: ed071b5236397b9be2704b0c20521c4451a73e646c2a2ed356508c6050bbac26
+    name: generate-secret
+    type: application
+    urls:
+    - generate-secret-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-08-06T10:25:27.079913494+02:00"
+    description: A Helm chart for Kubernetes
+    digest: fd915e6c4bc3d9c0b15b2e9c9004027512c6c052ed34222d771378465eb5d461
     name: generate-secret
     type: application
     urls:
     - generate-secret-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-06T09:42:17.285537052+02:00"
+generated: "2021-08-06T10:25:27.079242523+02:00"
