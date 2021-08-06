@@ -9,7 +9,7 @@ data:
     mc alias set minio {{ .Values.minio.url }} {{ .Values.minio.admin.accessKeyId }} {{ .Values.minio.admin.secretAccessKey }} --insecure
     if [ $? != 0 ] ; then echo "minio target configuration failed\n" ; exit 0 ; fi
     #Create user (or assert if they already exists)
-    mc admin user add minio/{{ .Values.user.accessKeyId }} {{ template "generate-secret-access-key"  . }} --insecure
+    mc admin user add minio {{ .Values.user.accessKeyId }} {{ template "generate-secret-access-key"  . }} --insecure
     #Create buckets (or assert if they already exists)
     mc mb minio/{{ .Values.user.accessKeyId }} --ignore-existing --insecure
     if [ $? != 0 ] ; then echo "bucket creation failed in minio\n" ; exit 0 ; fi
