@@ -14,7 +14,7 @@ data:
     mc mb minio/{{ .Values.user.accessKeyId }} --ignore-existing --insecure
     if [ $? != 0 ] ; then echo "bucket creation failed in minio\n" ; exit 0 ; fi
     #Create policy (or assert if they already exists)
-    mc admin policy add minio readwrite-{{ .Values.user.accessKeyId }}  policy.json --insecure
+    mc admin policy add minio readwrite-{{ .Values.user.accessKeyId }}  /scripts/policy.json --insecure
     #affect policy
     mc admin policy set minio readwrite-{{ .Values.user.accessKeyId }} user={{ .Values.user.accessKeyId }} --insecure
     echo "end script"

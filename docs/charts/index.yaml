@@ -3,9 +3,19 @@ entries:
   generate-secret:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-06T13:47:12.745764958+02:00"
+    created: "2021-08-06T14:10:06.937058272+02:00"
     description: A Helm chart for Kubernetes
-    digest: dbd145ee8f62dba4f12ea3e15435f24a628bee1f62bb02f48281815acbeecda4
+    digest: 2e413c3c22986703767c807dc4ee02e816ea61d7921e72b1e94a779315d190a0
+    name: generate-secret
+    type: application
+    urls:
+    - generate-secret-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-08-06T14:10:06.799267411+02:00"
+    description: A Helm chart for Kubernetes
+    digest: ed1026e53f7893ee8836b9e8771ae391a6284a3386c6dedd179c1ca9787633e5
     name: generate-secret
     type: application
     urls:
@@ -13,7 +23,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-06T13:47:12.721320871+02:00"
+    created: "2021-08-06T14:10:06.739823424+02:00"
     description: A Helm chart for Kubernetes
     digest: 428659a9db248f077fae207a189b197dc029dce15075591507cb5b50359a542f
     name: generate-secret
@@ -23,7 +33,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-06T13:47:12.699536931+02:00"
+    created: "2021-08-06T14:10:06.726589044+02:00"
     description: A Helm chart for Kubernetes
     digest: 106fe5ea256744af43e2d647730ebb8d636a07c0c39a1e567dd6531449bf3ad8
     name: generate-secret
@@ -33,7 +43,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-06T13:47:12.685449476+02:00"
+    created: "2021-08-06T14:10:06.713625706+02:00"
     description: A Helm chart for Kubernetes
     digest: a0b32a43a859d1ee59419bd29b9ac94c42eb10cfc4bb8f70db3637ca50603ab2
     name: generate-secret
@@ -43,7 +53,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-08-06T13:47:12.680907281+02:00"
+    created: "2021-08-06T14:10:06.709583876+02:00"
     description: A Helm chart for Kubernetes
     digest: fd915e6c4bc3d9c0b15b2e9c9004027512c6c052ed34222d771378465eb5d461
     name: generate-secret
@@ -51,4 +61,4 @@ entries:
     urls:
     - generate-secret-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-06T13:47:12.679621947+02:00"
+generated: "2021-08-06T14:10:06.708794412+02:00"

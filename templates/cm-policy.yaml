@@ -14,7 +14,7 @@ data:
           ],
           "Effect": "Allow",
           "Resource": [
-              "arn:aws:s3:::{{.Values.accessKeyId }}/*"
+              "arn:aws:s3:::{{.Values.user.accessKeyId }}/*"
           ],
           "Sid": ""
         }

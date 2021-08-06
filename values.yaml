@@ -3,7 +3,7 @@ fullnameOverride: velero
 
 image:
   name: minio/mc
-  tag: RELEASE.2021-03-12T03-36-59Z
+  tag: RELEASE.2021-07-27T06-46-19Z
   pullPolicy: Always
   repository: docker.io
   #pullSecret:
